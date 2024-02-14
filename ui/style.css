@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 60%;
+    height: auto;
+    padding: 60px;
+    background-color: rgba(51, 47, 55, 0.8);
+    border-radius: 20px;
+    border: solid 3px #7FFFD4;
+    display: none; 
+}
+
+.button-close {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+.button-close button{
+    background-color: transparent;
+    color: #7FFFD4;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container > h1{
+    color: #7FFFD4;
+    text-align: center;
+    padding: 60x 0px;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contentSearch {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.contentSearch > input {
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+    padding: 0px 10px;
+    font-size: 1rem;
+}
+
+.contentSearch > button {
+    background-color: #332F37;
+    width: 10%;
+    height: 75%;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    color: #7FFFD4;
+    padding: 5px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.container-skins {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    align-items: center;
+    justify-content: center;
+    background-color: #332F37;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 15px 0px;
+}
+
+/* width */
+.container-skins::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+.container-skins::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+.container-skins::-webkit-scrollbar-thumb {
+    background: #7FFFD4;
+    border-radius: 10px;
+  }
+
+.skin {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(211, 211, 211, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px ;
+    margin: 15px 15px;
+}
+.skin.hidden {
+    display: none;
+}
+.skin button:hover{
+    border-bottom: solid 3px #7FFFD4;
+}
+
+.skin img {
+    width: 50px;
+    height: 150px;
+}
+
+.skin p {
+    color: #7FFFD4;
+    padding: 5px;
+}
+
+.skin button {
+    width: 60%;
+    height: 30px;
+    background-color: #31304d;
+    padding: 5px;
+    color: #7FFFD4;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
